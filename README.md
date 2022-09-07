@@ -8,7 +8,7 @@
 It will contain a lot of general purpose functions I'll be using trough 42.
 ### Content
 This project is under construction and expected to be finished until 03/10/2022.
-- [x] **Libc functions** 23/23<br>
+- [x] **Libc functions** 2/23<br>
  [isalpha](https://github.com/andrade-adsf/libft/blob/main/ft_isalpha.c)
 | [isdigit](https://github.com/andrade-adsf/libft/blob/main/ft_isdigit.c)
 
