@@ -24,6 +24,7 @@ This project is under construction and expected to be finished until 03/10/2022.
 | [toupper](https://github.com/andrade-adsf/libft/blob/main/ft_toupper.c)
 | [tolower](https://github.com/andrade-adsf/libft/blob/main/ft_tolower.c)
 | [strchr](https://github.com/andrade-adsf/libft/blob/main/ft_strchr.c)
+| [strrchr](https://github.com/andrade-adsf/libft/blob/main/ft_strrchr.c)
 | [strncmp](https://github.com/andrade-adsf/libft/blob/main/strncmp.c)
 | [memchr](https://github.com/andrade-adsf/libft/blob/main/ft_memchr.c)
 | [memcpm](https://github.com/andrade-adsf/libft/blob/main/ft_memcmp.c)
