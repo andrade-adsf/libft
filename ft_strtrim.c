@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 06:03:27 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/17 07:37:12 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/17 07:46:07 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	count;
+	int		count;
+	char	*swp;
 
 	count = 0;
-	while (s1[count] == set)
+	swp = ft_strdup(s1);
+	while (swp[count] == set)
 		count++;
-	s1 = s1[count];
+	swp = swp[count];
 	count = 0;
-	while (s1[count] != set)
+	while (swp[count] != set)
 		count++;
-	s1[count] = '\0';
-	return (s1);
+	swp[count] = '\0';
+	return (swp);
 }
