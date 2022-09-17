@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/17 04:37:50 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/17 05:37:42 by feandrad         ###   ########.fr       */
+/*   Created: 2022/09/17 04:50:25 by feandrad          #+#    #+#             */
+/*   Updated: 2022/09/17 05:57:26 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;
+	int		lens1;
 
-	result = malloc((sizeof(char) * ft_strlen(s)) + 1);
-	result[len + 1] = '\0';
-	while (len > 0)
+	lens1 = ft_strlen(s1);
+	result = malloc(sizeof(char) * (lens1 + ft_strlen(s2) + 1));
+	while (s2[lens1] != '\0')
 	{
-		len--;
-		result[len] = s[len];
+		lens1++;
+		result[lens1] = s2[lens1];
+	}
+	lens1 = 0;
+	while (s1[lens1] != '\0')
+	{
+		result[lens1] = s1[lens1];
+		lens1++;
 	}
 	return (result);
 }
