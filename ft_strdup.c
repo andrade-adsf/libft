@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 00:17:34 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/17 00:34:05 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/17 07:46:47 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ char	*strdup(const char *s)
 		s[count] = str[count];
 		count++;
 	}
+	str[count] = '\0';
 	return (str);
 }
