@@ -8,8 +8,11 @@
 It will contain a lot of general purpose functions I'll be using trough 42.
 ### Content
 This project is under construction and expected to be finished until 03/10/2022.
-- [x] **Libc functions** 21/23<br>
- [isalpha](https://github.com/andrade-adsf/libft/blob/main/ft_isalpha.c)
+- [x] **Extra Files** 2/2<br>
+[Makefile](https://github.com/andrade-adsf/libft/blob/main/Makefile)
+| [libft.h](https://github.com/andrade-adsf/libft/blob/main/libft.h)
+- [x] **Libc functions** 23/23<br>
+[isalpha](https://github.com/andrade-adsf/libft/blob/main/ft_isalpha.c)
 | [isdigit](https://github.com/andrade-adsf/libft/blob/main/ft_isdigit.c)
 | [isalnum](https://github.com/andrade-adsf/libft/blob/main/ft_isalnum.c)
 | [isascii](https://github.com/andrade-adsf/libft/blob/main/ft_isascii.c)
@@ -32,5 +35,13 @@ This project is under construction and expected to be finished until 03/10/2022.
 | [atoi](https://github.com/andrade-adsf/libft/blob/main/ft_atoi.c)
 | [calloc](https://github.com/andrade-adsf/libft/blob/main/ft_calloc.c)
 | [ft_strdup](https://github.com/andrade-adsf/libft/blob/main/ft_strdup.c)
+- [x] **Adictional Functions** 7/11<br>
+[ft_substr](https://github.com/andrade-adsf/libft/blob/main/ft_substr.c)
+| [ft_strjoin](https://github.com/andrade-adsf/libft/blob/main/ft_strjoin.c)
+| [ft_strtrim](https://github.com/andrade-adsf/libft/blob/main/ft_strtrim.c)
+| [ft_putchar_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putchar_fd.c)
+| [ft_putstr_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putstr_fd.c)
+| [ft_putendl_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putendl_fd.c)
+| [ft_putnbr_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putnbr_fd.c)
 
 [⬆ Back to the top](#libft)<br>
