@@ -12,6 +12,9 @@ SRCS = 	ft_atoi.c ft_bzero.c ft_calloc.c \
 		ft_strncmp.c ft_strnstr.c ft_strrchr.c \
 		ft_tolower.c ft_toupper.c \
 		# Parte 2
+		ft_substr ft_strjoin ft_strtrim \
+		ft_putchar_fd ft_putstr_fd ft_putendl_fd \
+		ft_putnbr_fd
 
 OBJS = $(SRCS:.c=.o)
 
