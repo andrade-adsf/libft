@@ -30,5 +30,7 @@ This project is under construction and expected to be finished until 03/10/2022.
 | [memcpm](https://github.com/andrade-adsf/libft/blob/main/ft_memcmp.c)
 | [strnstr](https://github.com/andrade-adsf/libft/blob/main/ft_strnstr.c)
 | [atoi](https://github.com/andrade-adsf/libft/blob/main/ft_atoi.c)
+| [calloc](https://github.com/andrade-adsf/libft/blob/main/ft_calloc.c)
+| [ft_strdup](https://github.com/andrade-adsf/libft/blob/main/ft_strdup.c)
 
 [⬆ Back to the top](#libft)<br>
