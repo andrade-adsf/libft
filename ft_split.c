@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 00:50:46 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/22 02:43:39 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/22 23:47:24 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,7 @@ char	**ft_split(char const *s, char c)
 			count++;
 	}
 	while (word_count >= 0)
-	{
-		while (s[count] == c)
-			count--;
-		ft_putchar_fd('\0', 1);
-		count--;
-		while (s[count] != c && s[count] >= 0)
-			word[word_count] = ft_putchar_fd(s[count], 0);
-			count--;
-		word_count--;
-	}
+		ft_ptuchar_bs(s, c, count);
 	return (word);
 }
 
@@ -53,4 +44,16 @@ int	ft_strlen_sep(char *str, char c)
 	while (str[result] != c && str[result] != '\0')
 		result++;
 	return (result);
+}
+
+int	ft_ptuchar_bs(char *str, char c, int count)
+{
+	while (s[count] == c)
+		count--;
+	ft_putchar_fd('\0', 1);
+	count--;
+	while (s[count] != c && s[count] >= 0)
+		word[word_count] = ft_putchar_fd(s[count], 0);
+		count--;
+	word_count--;
 }
