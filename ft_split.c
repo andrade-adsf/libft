@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 00:50:46 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/22 02:41:36 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/22 02:43:39 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	**ft_split(char const *s, char c)
 		while (s[count] == c)
 			count--;
 		ft_putchar_fd('\0', 1);
+		count--;
 		while (s[count] != c && s[count] >= 0)
 			word[word_count] = ft_putchar_fd(s[count], 0);
 			count--;
