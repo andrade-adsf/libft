@@ -6,34 +6,31 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 02:20:19 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/10 00:00:46 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/25 23:59:20 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
-{
-	int	count_big;
-	int	count_little;
-	int	pointer;
+#include "libft.h"
 
-	count_big = 0;
-	count_little = 0;
-	if (little[0] == '\0')
-		return (big);
-	while (big[count_big] != '\0' && big[count_big]
-		!= little[count_little] && big[count_big] <= len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t	i;
+
+	if (!haystack)
+		return (NULL);
+	if (!*needle)
+		return ((char *)haystack);
+	while (*haystack && len > 0)
 	{
-		count_big++;
-		while (big[count_big] == little[count_little] && little != '\0')
+		i = 0;
+		while (haystack[i] == needle[i] && (len - i) > 0)
 		{
-			pointer = (char *)&big[count_big];
-			count_little++;
-			count_big++;
+			i++;
+			if (!needle[i])
+				return ((char *)haystack);
 		}
-		if (big[count_big] != little[count_little])
-			count_little = 0;
-		else
-			return (pointer);
+		haystack++;
+		len--;
 	}
 	return (NULL);
 }

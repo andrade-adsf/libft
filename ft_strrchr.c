@@ -6,9 +6,11 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 02:08:55 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/09 02:19:03 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/25 23:59:52 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

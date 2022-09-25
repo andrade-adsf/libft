@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 03:08:07 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/22 02:33:49 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/25 23:05:00 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	count;
 
+	count = 0;
 	while (s[count] != '\0')
 	{
-		ft_putchar_fd(*s, 1);
+		ft_putchar_fd(*s, fd);
 		count++;
 	}
 }

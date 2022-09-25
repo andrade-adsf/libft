@@ -6,19 +6,23 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 23:44:52 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/12 00:15:08 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/25 22:12:00 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
-	while (count <= n && ((char *)s) != '\0')
+	if (n <= 0)
+		return (NULL);
+	while (count <= n)
 	{
 		((char *)s)[count] = c;
 		count ++;
 	}
-	return ((char *)&s);
+	return (s);
 }

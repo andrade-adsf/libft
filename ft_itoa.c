@@ -6,22 +6,24 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 23:48:25 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/23 00:45:49 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/25 22:50:44 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	intlen(int n);
+
 char	*ft_itoa(int n)
 {
 	int		count;
-	char	result;
-	
+	char	*result;
+
 	count = intlen(n) + 1;
-	result = malloc((sizeof(char) * count));
+	result = (char *) ft_calloc(count, sizeof(char));
 	result[count] = '\0';
 	count--;
-	while(count > 0)
+	while (count > 0)
 	{
 		result[count] = n % 10;
 		count--;
@@ -34,23 +36,23 @@ char	*ft_itoa(int n)
 
 int	intlen(int n)
 {
-	int count;
-	
+	int	count;
+
 	count = 1;
 	if (n > 9)
 	{
-		while (n_tocount > 9)
+		while (n > 9)
 		{
 			count++;
-			n_tocount /= 10;
+			n /= 10;
 		}
 	}
 	else if (n < 0)
 	{
-		while (n_tocount < -9)
+		while (n < -9)
 		{
 			count++;
-			n_tocount /= 10;
+			n /= 10;
 		}
 		count++;
 	}
