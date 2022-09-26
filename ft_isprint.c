@@ -6,11 +6,11 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 00:08:43 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/08 00:21:14 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/26 20:19:54 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	return (!(c >= 0 && c <= 31));
+	return ((c >= 32 && c <= 126));
 }

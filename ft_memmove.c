@@ -6,30 +6,30 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 20:30:01 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/12 00:00:12 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/26 21:13:54 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*swp_dest;
-	char	*swp_src;
+	char	*dest;
+	char	*source;
 
-	swp_dest = (char *) dest;
-	swp_src = (char *) src;
-	if (dest && src)
+	if (!dst && !src)
+		return (NULL);
+	if (src < dst && (src + len) > dst)
 	{
-		while (n > 0)
+		source = (char *) src;
+		dest = (char *) dst;
+		while (len > 0)
 		{
-			n--;
-			swp_dest[n] = swp_src[n];
+			dest[len - 1] = source[len - 1];
+			len--;
 		}
-		return (dest);
 	}
 	else
-	{
-		return (NULL);
-	}
+		ft_memcpy(dst, src, len);
+	return (dst);
 }
