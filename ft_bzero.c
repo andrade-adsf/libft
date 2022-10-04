@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 23:44:40 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/11 22:33:27 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/28 00:50:17 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	ft_bzero(void *s, size_t n)
 	size_t	count;
 
 	count = 0;
-	while (count <= n)
+	while (count < n)
 	{
-		((char *)s)[count] = '\0';
+		((char *) s)[count] = 0;
 		count ++;
 	}
 }

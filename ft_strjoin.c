@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 04:50:25 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/25 23:54:46 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/30 05:50:55 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,14 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*result;
-	int		lens1;
+	unsigned int	size;
+	char			*result;
 
-	lens1 = ft_strlen(s1);
-	result = malloc((lens1 + ft_strlen(s2) + 1) * sizeof(char));
-	while (s2[lens1] != '\0')
-	{
-		lens1++;
-		result[lens1] = s2[lens1];
-	}
-	lens1 = 0;
-	while (s1[lens1] != '\0')
-	{
-		result[lens1] = s1[lens1];
-		lens1++;
-	}
+	size = ft_strlen(s1) + ft_strlen(s2) + 1;
+	result = (char *) ft_calloc (size, sizeof(char));
+	if (!result)
+		return (NULL);
+	ft_strlcat(result, s1, size);
+	ft_strlcat(result, s2, size);
 	return (result);
 }

@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 14:38:23 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/11 20:07:55 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/30 03:15:49 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,28 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	count_dst;
-	size_t	count_src;
+	size_t	count;
+	size_t	total_size;
 
-	count_dst = ft_strlen(dst);
-	count_src = 0;
-	while (src[count_src] != '\0' && count_src < (size - 1))
+	if (size > ft_strlen(dst))
 	{
-		dst[count_dst] = src[count_src];
-		count_src++;
-		count_dst++;
+		total_size = ft_strlen(dst) + ft_strlen(src);
+		while (*dst)
+		{
+			dst++;
+			size--;
+		}
+		count = 0;
+		while (count < (size - 1) && src[count])
+		{
+			dst[count] = src[count];
+			count++;
+		}
+		dst[count] = '\0';
 	}
-	dst[count_dst] = '\0';
-	return (ft_strlen(dst));
+	else
+	{
+		total_size = ft_strlen(src) + size;
+	}
+	return (total_size);
 }

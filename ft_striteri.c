@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 21:38:24 by feandrad          #+#    #+#             */
-/*   Updated: 2022/09/25 23:53:17 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/09/30 06:39:19 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 	count = 0;
 	while (s[count] != '\0')
+	{
 		f(count, s + count);
+		count++;
+	}
 }
