@@ -1,13 +1,15 @@
 # libft
 42 Cursus - Libft
 
+<img src="https://game.42sp.org.br/static/assets/achievements/libfte.png" alt="completion-badge" align="right">
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
 > This project is about coding a C library.
 It will contain a lot of general purpose functions your programs will rely upon.
 
 ### Content
-This project has been completed but not evaluated.
+This project has been completed and evaluated with a score of 100 of 100.
 
 - [x] **Extra files** 2/2<br>
 [Makefile](https://github.com/andrade-adsf/libft/blob/main/Makefile)
