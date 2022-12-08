@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_utoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/17 03:02:41 by feandrad          #+#    #+#             */
-/*   Updated: 2022/12/07 18:03:20 by feandrad         ###   ########.fr       */
+/*   Created: 2022/12/07 20:58:13 by feandrad          #+#    #+#             */
+/*   Updated: 2022/12/07 21:00:48 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+static size_t   intlen(int n);
+static void fill_tab(char *tab, unsigned int nb, int size);
 
-int	ft_putchar_fd(char c, int fd)
+char    *ft_itoa(unsigned int n)
 {
-	int c_size;
-	
-	c_size = 1;
-	write(fd, &c, 1);
-	return (c_size);
+    char    *str;
+    size_t  size; 
+
+    
 }
