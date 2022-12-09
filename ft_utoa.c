@@ -6,9 +6,11 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 20:58:13 by feandrad          #+#    #+#             */
-/*   Updated: 2022/12/07 21:00:48 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/12/09 10:05:59 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static size_t   intlen(int n);
 static void fill_tab(char *tab, unsigned int nb, int size);
