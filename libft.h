@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:02:45 by feandrad          #+#    #+#             */
-/*   Updated: 2022/12/09 10:02:46 by feandrad         ###   ########.fr       */
+/*   Updated: 2022/12/09 12:14:06 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void	ft_putnbr_fd(int n, int fd);
 int	ft_putstr_fd(char *s, int fd);
 
 //Extra
-char    *ft_itoa(unsigned int n);
+char    ft_utoa(unsigned int n);
+char    ft_hextoa(unsigned long n);
 
 #endif
