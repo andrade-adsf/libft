@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:02:45 by feandrad          #+#    #+#             */
-/*   Updated: 2022/12/09 12:14:06 by feandrad         ###   ########.fr       */
+/*   Updated: 2023/01/16 20:01:09 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int	ft_putstr_fd(char *s, int fd);
 
 //Extra
 char    ft_utoa(unsigned int n);
-char    ft_hextoa(unsigned long n);
+char    ft_hextoa(unsigned long n, int flag);
+unsigned int	print_pointer(unsigned long int arg);
 
 #endif

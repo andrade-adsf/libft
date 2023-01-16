@@ -6,7 +6,7 @@
 /*   By: feandrad <feandrad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 12:13:56 by feandrad          #+#    #+#             */
-/*   Updated: 2023/01/07 00:14:34 by feandrad         ###   ########.fr       */
+/*   Updated: 2023/01/16 19:59:46 by feandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 static size_t	intlen(unsigned int nb);
 
-char	ft_printhex(unsigned int nbr, int flag)
+char	ft_hextoa(unsigned int nbr, int flag)
 {
     char    *result;
     size_t  digits;
@@ -39,6 +39,7 @@ char	ft_printhex(unsigned int nbr, int flag)
 	}
 	if (digits == 0 && result[1] == '\0')
 		result[0] = '0';
+    free(base_str);
     return (result);
 }
 
