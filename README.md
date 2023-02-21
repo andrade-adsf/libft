@@ -9,7 +9,10 @@
 It will contain a lot of general purpose functions your programs will rely upon.
 
 ### Content
-This project has been completed and evaluated with a score of 100 of 100.
+This project has been completed and evaluated.
+```diff
++ Final grade 100/100.
+```
 
 - [x] **Extra files** 2/2<br>
 [Makefile](https://github.com/andrade-adsf/libft/blob/main/Makefile)
@@ -49,5 +52,3 @@ This project has been completed and evaluated with a score of 100 of 100.
 | [putstr_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putstr_fd.c)
 | [putendl_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putendl_fd.c)
 | [putnbr_fd](https://github.com/andrade-adsf/libft/blob/main/ft_putnbr_fd.c)
-
-[⬆ Back to the top](#libft)<br>
